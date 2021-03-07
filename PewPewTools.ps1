@@ -129,7 +129,7 @@ $Button1.Add_Click({
     }
     $choosesjson | Out-File -FilePath "~\PewPewTools\config.json"
     Write-Host "INFO: Downloading Updater" -ForegroundColor Green
-    Invoke-WebRequest "https://firebasestorage.googleapis.com/v0/b/sharing-test-f7235.appspot.com/o/ppl-things%2FPewPewToolsUpdater.ps1?alt=media&token=32144e77-fc30-4d00-9c76-51f604a59073" -OutFile "~\PewPewTools\updater.ps1"
+    Invoke-WebRequest "https://raw.githubusercontent.com/PapuasinisPingvinas/PewPew-Tools/master/PewPewToolsUpdater.ps1" -OutFile "~\PewPewTools\updater.ps1"
     Write-Host "INFO: Download complete." -ForegroundColor Green
     [System.Windows.MessageBox]::Show('Download complete.','Operation Successful','OK','Info')
 })
