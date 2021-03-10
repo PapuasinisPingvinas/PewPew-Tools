@@ -121,7 +121,10 @@ $Button1.Add_Click({
     }
     if ($chooses.pplve -eq $true){
         Write-Host "INFO: Downloading PPLVE" -ForegroundColor Green
-        Invoke-WebRequest "https://github.com/PapuasinisPingvinas/Pewhelp-vscode/releases/latest/download/pewhelp-0.0.1.vsix" -OutFile "~\PewPewTools\pplbp.vsix"
+        Invoke-WebRequest "https://github.com/PapuasinisPingvinas/Pewhelp-vscode/releases/latest/download/pewhelp-0.0.1.vsix" -OutFile "~\PewPewTools\pplve.vsix"
+        Set-Location "~\PewPewTools\"
+        code --install-extension pplve.vsix
+        Remove-Item "~\PewPewTools\pplve.vsix"
         Write-Host "INFO: Download complete." -ForegroundColor Green
     }
     else {

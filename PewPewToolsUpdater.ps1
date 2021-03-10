@@ -97,7 +97,7 @@ $Button2.Add_Click({
         }
         if ($convertedjson.pplve -eq $true){
             Write-Host "INFO: Removing PPLVE" -ForegroundColor Green
-            Remove-Item "~\PewPewTools\pplve.vsix"
+            code  --uninstall-extension papuasinispingvinas.pewhelp
             Write-Host "INFO: Remove complete." -ForegroundColor Green
         }
         break
