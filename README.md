@@ -1,4 +1,4 @@
-# Warning: The development of this tool is currently stalled. The development may pick up back later.
+# This project is archived because it has little to no use.
 # PewPew Tools
 A tool that let's you install and update all PewPew tools in one place.
 ## Installation
